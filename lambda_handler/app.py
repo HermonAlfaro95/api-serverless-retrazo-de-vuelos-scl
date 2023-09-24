@@ -21,7 +21,9 @@ modelo = joblib.load(path_modelo)
 
 def lambda_handler(event, context):
 
-    logger.info(event)
+    logger.info("AQUI:")
+    logger.info(f"event: {type(event)} valores: {event}")
+    logger.info(f"context: {type(context)} valores: {context}")
 
     # init variable de respuesta
     response = {}
