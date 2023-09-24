@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-      - MLE002
+      - develop
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
