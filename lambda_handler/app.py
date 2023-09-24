@@ -29,9 +29,9 @@ def lambda_handler(event, context):
     response = {}
 
     # parametros de entrada para el modelo
-    dia = event['queryStringParameters'].get('dia', None)
-    mes = event['queryStringParameters'].get('mes', None)
-    temporada_alta = event['queryStringParameters'].get('temporada_alta', None)
+    dia = int(event['queryStringParameters'].get('dia', None))
+    mes = int(event['queryStringParameters'].get('mes', None))
+    temporada_alta = int(event['queryStringParameters'].get('temporada_alta', None))
     tipovuelvo = event['queryStringParameters'].get('tipovuelo', None)
     opera = event['queryStringParameters'].get('opera', None)
     siglades = event['queryStringParameters'].get('siglades', None)
