@@ -38,4 +38,4 @@ Outputs:
     Value: !GetAtt ProbaRetrazoVolSCLFunction.Arn
   ProbaRetrazoVolSCLFunctionIamRole:
     Description: "Implicit IAM Role created for ProbaRetrazoVolSCL function"
-    Value: !GetAtt ProbaRetrazoVolSCLFunctionIamRole.Arn
+    Value: !GetAtt ProbaRetrazoVolSCLFunctionRole.Arn
