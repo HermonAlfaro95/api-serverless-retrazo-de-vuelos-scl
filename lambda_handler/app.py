@@ -59,7 +59,7 @@ def lambda_handler(event, context):
         # Prediccion
         pred = modelo.predict(data)[0]
         pred_proba = np.max(modelo.predict_proba(data))
-        pred_etiqueta = "atrasado" if pred==1 else 0
+        pred_etiqueta = "atrasado" if pred==1 else "a la hora"
 
         # Respuesta modelo
         response = {
